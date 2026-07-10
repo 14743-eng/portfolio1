@@ -1,0 +1,364 @@
+/* =========================================
+   Portfolio Website
+   Theme : Pastel Blue
+   Author : Peerapat
+========================================= */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Prompt',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#F5FBFF;
+    color:#333;
+    line-height:1.8;
+}
+
+/* ================= NAVBAR ================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.navbar{
+
+    width:100%;
+    height:75px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 8%;
+
+    background:white;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.logo{
+
+    font-size:28px;
+    font-weight:700;
+
+    color:#58B8F8;
+
+}
+
+.menu{
+
+    display:flex;
+
+    list-style:none;
+
+}
+
+.menu li{
+
+    margin-left:25px;
+
+}
+
+.menu li a{
+
+    text-decoration:none;
+
+    color:#444;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.menu li a:hover{
+
+    color:#4AAEF5;
+
+}
+
+.active{
+
+    color:#4AAEF5 !important;
+
+    font-weight:bold;
+
+}
+
+/* ================= HERO ================= */
+
+.hero{
+
+    min-height:90vh;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:70px 8%;
+
+    gap:60px;
+
+}
+
+.hero-text{
+
+    flex:1;
+
+}
+
+.hero-text h1{
+
+    font-size:55px;
+
+    color:#45A8EF;
+
+}
+
+.hero-text h2{
+
+    font-size:30px;
+
+    margin-top:10px;
+
+}
+
+.name{
+
+    margin-bottom:20px;
+
+}
+
+.hero-text p{
+
+    margin:25px 0;
+
+    color:#666;
+
+    font-size:18px;
+
+}
+
+/* Button */
+
+.btn{
+
+    display:inline-block;
+
+    background:#69C4FF;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:14px 35px;
+
+    border-radius:50px;
+
+    transition:.3s;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+.btn:hover{
+
+    background:#4AAEF5;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+
+}
+
+/* Hero Image */
+
+.hero-image{
+
+    flex:1;
+
+    text-align:center;
+
+}
+
+.hero-image img{
+
+    width:360px;
+
+    height:360px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:10px solid white;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+/* ================= FEATURE ================= */
+
+.feature{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    padding:80px 8%;
+
+}
+
+.card{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.card h2{
+
+    font-size:55px;
+
+}
+
+.card h3{
+
+    margin:15px 0;
+
+    color:#3AA8F2;
+
+}
+
+.card p{
+
+    color:#666;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    background:#DFF3FF;
+
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:60px;
+
+    color:#555;
+
+}
+
+/* ================= Scroll Bar ================= */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#7FCFFF;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#EEF9FF;
+
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:900px){
+
+.navbar{
+
+    flex-direction:column;
+
+    height:auto;
+
+    padding:20px;
+
+}
+
+.menu{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    margin-top:15px;
+
+}
+
+.menu li{
+
+    margin:10px;
+
+}
+
+.hero{
+
+    flex-direction:column-reverse;
+
+    text-align:center;
+
+}
+
+.hero-text h1{
+
+    font-size:42px;
+
+}
+
+.hero-image img{
+
+    width:260px;
+
+    height:260px;
+
+}
+
+}
